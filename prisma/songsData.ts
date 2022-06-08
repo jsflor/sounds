@@ -8,6 +8,7 @@ export const artistsData: {
       {
         name: 'Fermi Paradox',
         duration: 235,
+
         url: 'https://dl.dropboxusercontent.com/s/7xmpwvvek6szx5n/fermi-paradox.mp3?dl=0',
       },
     ],
