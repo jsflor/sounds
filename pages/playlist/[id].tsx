@@ -39,7 +39,7 @@ export const getServerSideProps = async ({ query, req }) => {
   let user
 
   try {
-    user = validateToken(req.cookies.TRAX_ACCESS_TOKEN)
+    user = validateToken(req.cookies.SOUNDS_ACCESS_TOKEN)
   } catch (e) {
     return {
       redirect: {

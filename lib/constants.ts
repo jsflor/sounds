@@ -1,0 +1,2 @@
+export const JWT_PRIVATE_KEY = 'JSFLOR_SOUNDS_JWT';
+export const JWT_COOKIE_NAME = 'SOUNDS_ACCESS_TOKEN';

@@ -17,9 +17,14 @@ const AuthForm: React.FC<{ mode: 'signin' | 'signup' }> = ({ mode }) => {
     e.preventDefault();
     setIsLoading(true);
 
-    await auth(mode, { email, password });
-    setIsLoading(false);
-    router.push('/');
+    try {
+      await auth(mode, { email, password });
+      setIsLoading(false);
+      router.push('/');
+    } catch (error) {
+      console.log(error)
+      setIsLoading(true);
+    }
   }
 
   return (
